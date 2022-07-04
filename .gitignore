@@ -396,3 +396,6 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# auto-generated js
+/BlazorWASMTypeScript/Client/wwwroot/js
