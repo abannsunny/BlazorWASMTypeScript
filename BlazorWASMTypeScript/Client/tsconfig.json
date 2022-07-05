@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "outDir": "dist/js",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "importHelpers": true,
+    "alwaysStrict": true,
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "target": "es5",
+    "baseUrl": "./",
+    "lib": [
+      "dom",
+      "es5",
+      "es2015",
+      "es2017.object"
+    ]
+  },
+  "typeRoots": [
+    "./node_modules/@types"
+  ],
+  "include": [
+    "wwwroot/Typescript"
+  ],
+  "exclude": [
+    "node_modules",
+    "wwwroot/css",
+    "wwwroot/js",
+    "wwwroot/appsettings.json",
+    "wwwroot/favicon.ico",
+    "wwwroot/icon-192.png",
+    "wwwroot/index.html",
+    "wwwroot/index.min.html"
+  ]
+}
