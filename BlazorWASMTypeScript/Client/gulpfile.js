@@ -1,12 +1,10 @@
 ﻿"use strict";
 const fs = require("fs-extra");
-const path = require("path");
 const { series, watch } = require("gulp");
 const rollup = require('rollup');
 const rollupTypescript = require('@rollup/plugin-typescript');
 const commonjs = require('@rollup/plugin-commonjs');
 const { nodeResolve } = require('@rollup/plugin-node-resolve');
-const crypto = require("crypto");
 
 // variables
 const outFileName = 'calculator';
@@ -32,7 +30,7 @@ function build() {
             return bundle.write({
                 file: outfilePathEnv,
                 exports: "named",
-                format: "umd",
+                format: "iife",
                 name: "Calculator",
                 extend: true,
                 sourcemap: true

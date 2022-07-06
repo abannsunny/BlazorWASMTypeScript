@@ -12,13 +12,7 @@
     "removeComments": false,
     "sourceMap": true,
     "target": "es5",
-    "baseUrl": "./",
-    "lib": [
-      "dom",
-      "es5",
-      "es2015",
-      "es2017.object"
-    ]
+    "baseUrl": "./"
   },
   "typeRoots": [
     "./node_modules/@types"
